@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="agenda.css">
+</head>
+<body onload="initializeCalendar()">
+    <header>
+        Nossa agenda juntos
+    </header>
+
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <button id="prev-month">&lt;</button>
+            <button id="next-month">&gt;</button>
+            <h2 id="month-year"></h2>
+
+        </div>
+        <table id="calendar">
+            <thead>
+                <tr>
+                    <th>Dom</th>
+                    <th>Seg</th>
+                    <th>Ter</th>
+                    <th>Qua</th>
+                    <th>Qui</th>
+                    <th>Sex</th>
+                    <th>Sáb</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dias do calendário serão inseridos dinamicamente aqui -->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="task-section">
+        <label for="task-date">Selecionar Data:</label>
+        <input type="date" id="task-date">
+        <textarea id="task-description" placeholder="Descreva suas tarefas..."></textarea>
+        <button id="save-task">Salvar Tarefa</button>
+    </div>
+    <div id="task-popup" class="task-popup">
+        <div class="popup-content">
+            <span id="close-popup" class="close-popup">&times;</span>
+            <h3>Suas Tarefas</h3>
+            <ul id="task-list"></ul>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Agenda Romântica - Feito com ♥
+    </footer>
+
+
+    <script src="agenda.js"></script>
+</body>
+</html>

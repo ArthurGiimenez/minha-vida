@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap');
+
+body {
+    font-family: "Outfit", sans-serif;
+    background-color: #030D21;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header {
+    background-color: #ffb3c1;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+}
+
+
+.calendar-container {
+    margin-top: 20px;
+    width: 90%;
+    max-width: 1200px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+
+.calendar-header button {
+    background-color: #ffb3c1;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 70px;
+    
+}
+
+
+.calendar-header button:hover {
+    background-color: #ff8c94;
+}
+
+
+.calendar-header h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #bbbbbb;
+}
+
+
+th {
+    background-color: #ffcccc;
+}
+
+td {
+    background-color: #fff0f5;
+    cursor: pointer;
+    position: relative;
+}
+
+.add-task {
+    background-color: #ffb3c1;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-task:hover {
+    background-color: #ff8c94;
+}
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.task-list li {
+    background-color: #fff;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border-left: 5px solid #ffb3c1;
+}
+
+.task-list li.my-task {
+    border-left-color: #ff9999;
+}
+
+.task-list li.her-task {
+    border-left-color: #ff66b2;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+    background-color: #ffb3c1;
+    color: white;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 430px) {
+    header {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .calendar-container {
+        padding: 10px;
+    }
+
+    .calendar-header h2 {
+        font-size: 16px;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .add-task {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+
+
+.task-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#task-date {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#task-description {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+    height: 80px;
+}
+
+#save-task {
+    background-color: #ffb3c1;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#save-task:hover {
+    background-color: #ff8c94;
+}
+
+
+.task-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close-popup:hover {
+    color: #ff8c94;
+}
+
+
+#task-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#task-list li {
+    background-color: #ffb3c1;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: white;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/favicon" href="icon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha vida com você ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="emoji-container"></div>
+    
+    <!-- Landing Page com Contador -->
+    <div class="container">
+        <div class="landing-page">
+            <img  class="imagePrincipal"  src="sua-imagem.JPG" alt="Imagem Principal">
+            <div id="contador">
+                Estamos juntos há <span id="anos">0</span> anos, <span id="meses">0</span> meses, <span id="dias">0</span> dias, 
+                <span id="horas">0</span> horas, <span id="minutos">0</span> minutos, <span id="segundos">0</span> segundos. 
+                
+            </div>
+        </div>
+        <p class="heart">❤️</p>
+        <p class="text-dec">Para você se lembrar de quanto tempo se passou da minha melhor decisão... E que possamos voltar aqui e ver que os dias só aumentaram. Eu te amo hoje e sempre, minha pequena! ❤️</p>
+        
+        <div class="btnAdd">
+            <a href="agenda.html"><button class="btnTotal"><span>Agenda</span></button></a>
+            <a href="playlist.html"><button class="btnTotal">Playlist</button></a>
+            <button class="btnTotal">Em Breve</button>
+        </div>
+        
+        <p class="text-foto">Coloquei essas fotos aqui para sempre me lembrar do quão bonita a vida é ao seu lado!</p>
+        <!-- Galeria de Fotos -->
+        <div class="gallery-container">
+            <button class="gallery-button prev" onclick="mudarImagem(-1)">&#10094;</button>
+            <div class="gallery">
+                <img src="foto11.jpeg" class="gallery-image" alt="foto11">
+                <img src="foto1.jpg" class="gallery-image" alt="Foto 1">
+                <img src="foto2.jpg" class="gallery-image" alt="Foto 2">
+                <img src="foto3.JPG" class="gallery-image" alt="Foto 3">
+                <img src="foto4.jpg" class="gallery-image" alt="Foto 4">
+                <img src="foto5.JPG" class="gallery-image" alt="Foto 5">
+                <img src="foto14.jpeg" class="gallery-image" alt="Foto 14">
+                <img src="foto6.JPG" class="gallery-image" alt="Foto 6">
+                <img src="foto7.JPG" class="gallery-image" alt="Foto 7">
+                <img src="foto15.jpeg" class="gallery-image" alt="Foto 15">
+                <img src="foto8.JPG" class="gallery-image" alt="Foto 8">
+                <img src="foto9.JPG" class="gallery-image" alt="Foto 9">
+                <img src="foto10.jpg" class="gallery-image" alt="Foto 10">
+                <img src="foto12.jpeg" class="gallery-image" alt="Foto 12">
+                <img src="foto16.jpeg" class="gallery-image" alt="Foto 16">
+                <!-- Adicione mais imagens conforme necessário -->
+            </div>
+            <button class="gallery-button next" onclick="mudarImagem(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

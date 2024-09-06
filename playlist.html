@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossas músicas</title>
+    <link rel="stylesheet" href="playlist.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Nossa Playlist</h1>
+
+        <!-- Player de música -->
+        <audio id="audioPlayer" controls>
+            <source id="audioSource" src="caminho_para_sua_musica1.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+
+        <!-- Descrição da música -->
+        <p class="description" id="musicDescription">Essa música é especial para nós por causa daquela viagem que fizemos juntos.</p>
+
+        <!-- Prévia do Spotify -->
+        <iframe id="spotifyPlayer" src="https://open.spotify.com/embed/track/1RSdTzKm5vE3ELZPwbTbuQ" width="300" height="80" frameborder="0" allow="encrypted-media"></iframe>
+
+        <!-- Controles de música -->
+        <div class="controls">
+            <button id="prevBtn">Anterior</button>
+            <button id="nextBtn">Próxima</button>
+        </div>
+
+        <!-- Lista de músicas -->
+        <ul class="playlist">
+            <li data-src="caminho_para_sua_musica1.mp3" data-description="Essa música é especial para nós por causa daquela viagem que fizemos juntos." data-spotify="https://open.spotify.com/embed/track/1RSdTzKm5vE3ELZPwbTbuQ">Música 1 - Nome da música</li>
+            <li data-src="caminho_para_sua_musica2.mp3" data-description="Nosso hit favorito! Sempre nos faz lembrar dos melhores momentos." data-spotify="https://open.spotify.com/embed/track/4zUrxpnRMIHLWyNqB5ePkb">Música 2 - Nome da música</li>
+            <li data-src="caminho_para_sua_musica3.mp3" data-description="Essa música me lembra de quando nos conhecemos." data-spotify="https://open.spotify.com/embed/track/3VZrYSCPKxHo3K4dsVEtOl">Música 3 - Nome da música</li>
+        </ul>
+    </div>
